@@ -1,4 +1,8 @@
-
+@media (max-width: 320px) {
+.element {
+      width: 90%;   
+     }
+}
 .title {
 	text-align: center;
 }
