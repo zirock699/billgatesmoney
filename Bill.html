@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spend Bill's money</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+	<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+  	<img src="img/bill.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+    <i class="fa fa-cart-arrow-down title"> <strong> Spend Bill Gates money</strong></i>
+  </a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+
+
+</header>
+<main>
+	
+	<button type="button" class="btn btn-primary pos">
+  Bill's Money  <strong>$</strong> <span id="money" class="badge badge-light">90000000000</span>
+  <span class="sr-only">Money left to spend</span>
+</button>
+
+
+<div class="container">
+ <div class="row">
+<div class="col box">
+
+  <button class="btn btn-primary w-100 box" style="pointer-events: none;" type="button" disabled> <H4> Bill Gates wealth <strong>$90.000.000.000 </strong></H4> </button>
+</div>
+ </div>
+</div>
+
+<h4>Under $100.000</h4> <hr>
+
+<div class="row">
+    <div class="col-sm-12 col-md-3 col-lg-2">
+      	<div class="card text-center w-100  box line">
+		  <img src="img/burger.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>Big Mac</p>
+			    <p id="money">$3.00</p>
+			    <div class="row">
+			    	<div class="col"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total1" name="tot" value="0.00" class="w-75"style="text-align: center;border:0px solid black" readonly>
+			    		</div>
+				</div>
+
+			    <input type="button"  id="m1" name="-" value="-">
+			    <input type="number" id="count1" name="amount" value=0 readonly class="w-50" style="text-align: center;">
+				<input type="button" id="plus123" name="+" value="+">
+			</div>
+    	</div>
+	</div>
+    <div class="col-sm-12 col-md-3 col-lg-2">
+    	<div class="card text-center box line">
+		  <img src="img/coffee.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>Coffee</p>
+			    <p id="money">$4.00</p>
+			    <div class="row">
+			    	<div class="col"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total2" name="tot" value="0.00" class="w-75"style="text-align: center;border:0px solid black" readonly>
+			    		</div>
+				</div>
+			    <input type="button" id="m2" name="-" value="-">
+			    <input type="input" id="count2" name="amount" value="0" readonly class="w-50" style="text-align: center;">
+				<input type="button" id="plus2" name="+" value="+">
+			</div>
+    	</div>
+	</div>
+    <div class="col-sm-12 col-md-3 col-lg-2">
+      <div class="card text-center box line">
+		  <img src="img/book.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>Book</p>
+			    <p id="money">$14</p>
+			    <div class="row">
+			    	<div class="col"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total3" name="tot" value="0.00" class="w-75"style="text-align: center;border:0px solid black" readonly>
+			    		</div>
+				</div>
+			    <input type="button" id="m3" name="-" value="-">
+			    <input type="input" id="count3" name="amount" value="0" readonly class="w-50" style="text-align: center;">
+				<input type="button" id="plus3" name="+" value="+">
+			</div>
+    	</div>
+  </div>
+    <div class="col-sm-12 col-md-3 col-lg-2">
+      <div class="card text-center box line">
+		  <img src="img/videogame.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>Video Game</p>
+			    <p id="money">$60</p>
+			    <div class="row">
+			    	<div class="col"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total4" name="tot" value="0.00" class="w-75"style="text-align: center;border:0px solid black" readonly>
+			    		</div>
+				</div>
+			    <input type="button" id="m4" name="-" value="-">
+			    <input type="input" id="count4" name="amount" value="0" readonly class="w-50" style="text-align: center;">
+				<input type="button" id="plus4" name="+" value="+">
+			</div>
+    	</div>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-2">
+      <div class="card text-center box line">
+		  <img src="img/jetski.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>Jet Ski</p>
+			    <p id="money">$8.000</p>
+			    <div class="row">
+			    	<div class="col"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total5" name="tot" value="0.00" class="w-75"style="text-align: center;border:0px solid black" readonly>
+			    		</div>
+				</div>
+			    <input type="button" id="m5" name="-" value="-">
+			    <input type="input" id="count5" name="amount" value="0" readonly class="w-50" style="text-align: center;">
+				<input type="button" id="plus5" name="+" value="+">
+			</div>
+    	</div>
+	</div>
+    <div class="col-sm-12 col-md-3 col-lg-2">
+      <div class="card text-center box line">
+		  <img src="img/tesla.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>Tesla car</p>
+			    <p id="money">$70.000</p>
+			    <div class="row">
+			    	<div class="col"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total6" name="tot" value="0.00" class="w-75"style="text-align:right;border:0px solid black" readonly>
+			    		</div>
+				</div>
+			    <input type="button" id="m6" name="-" value="-">
+			    <input type="input" id="count6" name="amount" value="0" readonly class="w-50" style="text-align: center;">
+				<input type="button" id="plus6" name="+" value="+">
+			</div>
+    	</div>
+  </div>
+</div>
+<h4>Over $100.000</h4> <hr>
+<div class="row">
+    <div class="col-sm-12 col-md-3 col-lg-2">
+      	<div class="card text-center  box line">
+		  <img src="img/lambo.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>Lamborghini</p>
+			    <p id="money">$200.000</p>
+			    <div class="row">
+			    	<div class="col"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total7" name="tot" value="0.00" class="w-75"style="text-align: center;border:0px solid black" readonly>
+			    		</div>
+				</div>
+
+			    <input type="button"id="m7" name="-" value="-">
+			    <input type="input" id="count7" name="amount" value="0" readonly class="w-50" style="text-align: center;">
+				<input type="button" id="plus7" name="+" value="+">
+			</div>
+    	</div>
+	</div>
+    <div class="col-sm-12 col-md-3 col-lg-2">
+    	<div class="card text-center box line">
+		  <img src="img/gold.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>Bar of gold</p>
+			    <p id="money">$500.000</p>
+			    <div class="row">
+			    	<div class="col"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total8" name="tot" value="0.00" class="w-75"style="text-align: center;border:0px solid black" readonly>
+			    		</div>
+				</div>
+			    <input type="button" id="m8" name="-" value="-">
+			    <input type="input" id="count8" name="amount" value="0" readonly class="w-50" style="text-align: center;">
+				<input type="button" id="plus8" name="+" value="+">
+			</div>
+    	</div>
+	</div>
+    <div class="col-sm-12 col-md-3 col-lg-2">
+      <div class="card text-center box line">
+		  <img src="img/yacht.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>Yacht</p>
+			    <p id="money">$10.000.000</p>
+			    <div class="row">
+			    	<div class="col"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total9" name="tot" value="0.00" class="w-75"style="text-align: center;border:0px solid black" readonly>
+			    		</div>
+				</div>
+			    <input type="button" id="m9" name="-" value="-">
+			    <input type="input" id="count9" name="amount" value="0" readonly class="w-50" style="text-align: center;">
+				<input type="button" id="plus9" name="+" value="+">
+			</div>
+    	</div>
+  </div>
+    <div class="col-sm-12 col-md-3 col-lg-2">
+      <div class="card text-center box line">
+		  <img src="img/ship.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>Cruise ship</p>
+			    <p id="money">$1.200.000.000</p>
+			    <div class="row">
+			    	<div class="col"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total10" name="tot" value="0.00" class="w-75"style="text-align: center;border:0px solid black" readonly>
+			    		</div>
+				</div>
+			    <input type="button" id="m10" name="-" value="-">
+			    <input type="input" id="count10" name="amount" value="0" readonly class="w-50" style="text-align: center;">
+				<input type="button"id="plus10" name="+" value="+">
+			</div>
+    	</div>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-2">
+      <div class="card text-center box line">
+		  <img src="img/nba.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>NBA Team</p>
+			    <p id="money">$1.300.000.000</p>
+			    <div class="row">
+			    	<div class="col"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total11" name="tot" value="0.00" class="w-75"style="text-align: center;border:0px solid black" readonly>
+			    		</div>
+				</div>
+			    <input type="button" id="m11" name="-" value="-">
+			    <input type="input" id="count11" name="amount" value="0" readonly class="w-50" style="text-align: center;">
+				<input type="button"id="plus11" name="+" value="+">
+			</div>
+    	</div>
+	</div>
+    <div class="col-sm-12 col-md-3 col-lg-2">
+      <div class="card text-center box line">
+		  <img src="img/real.jpg" class="card-img-top" alt="bills photo">
+		  	<div class="card-body w-100 line">
+			    <p>Real Madrid</p>
+			    <p id="money">$4.239.000.000</p>
+			    <div class="row">
+			    	<div class="col w-50"><p>Total:</p> </div>
+			    	<div class="col" >
+			    		<input type="text" id="total12" name="tot" value="0.00" class="w-150"style="text-align: center;border:0px solid black;padding-left:0 0 0 0;" readonly>
+			    		</div>
+				</div>
+			    <input type="button" id="m12" name="-" value="-">
+			    <input type="input" id="count12" name="amount" value="0" readonly class="w-50 " style="text-align: center;">
+				<input type="button"id="plus12" name="+" value="+">
+			</div>
+    	</div>
+  </div>
+</div>
+
+
+
+</main>
+
+<footer>
+	<ul class="list-group box list-group-horizontal-xl">
+  <li class="list-group-item col"><button type="button" class="btn w-100 btn-outline-secondary">More Games...</button></li>
+  <li class="list-group-item col"><button type="button" class="btn w-100 btn-outline-primary">Contact us</button></li>
+  <li class="list-group-item col"><button type="button" class="btn w-100 btn-outline-dark" disabled>Created by Zirock699</button></li>
+</ul>
+</footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

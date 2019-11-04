@@ -1,0 +1,26 @@
+
+.title {
+	text-align: center;
+}
+.box {
+	width: auto;
+	height: auto;
+	 vertical-align: middle;
+}
+line{
+	line-height: normal;
+}
+body,html {
+	background-image: url(img/background.jpg);
+}
+.pos {
+	position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+opacity: 0.8;
+}
+.pos:hover{
+	opacity: 0.9;
+
+}
